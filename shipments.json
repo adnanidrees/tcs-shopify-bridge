@@ -1,0 +1,24 @@
+[
+  {
+    "clientReferenceNo": "#1003",
+    "consigneeCode": "8203681",
+    "soNo": null,
+    "status": "SO_CREATED",
+    "createdAt": "2025-11-10T11:06:32.421Z"
+  },
+  {
+    "clientReferenceNo": "#DEMO1001",
+    "consigneeCode": "8203681",
+    "soNo": null,
+    "status": "SO_CREATED",
+    "createdAt": "2025-11-11T08:29:24.188Z"
+  },
+  {
+    "shopifyOrderId": 6299301970008,
+    "clientReferenceNo": "#1002",
+    "consigneeCode": "8203681",
+    "soNo": null,
+    "status": "SO_CREATED",
+    "createdAt": "2025-11-10T11:31:21.216Z"
+  }
+]

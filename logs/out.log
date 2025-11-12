@@ -1,0 +1,1847 @@
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /debug/env [32m200[0m 2.811 ms - 244[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /debug/env [32m200[0m 3.762 ms - 244[0m
+[0mPOST /test/so [32m200[0m 5704.187 ms - 169[0m
+[0mPOST /webhooks/shopify/orders/create [0m-[0m - ms - -[0m
+[0mPOST /webhooks/shopify/orders/create [32m200[0m 4899.741 ms - 11[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /shipments [32m200[0m 28.693 ms - 423[0m
+[0mPOST /poll [32m200[0m 551.992 ms - 23[0m
+[0mGET /debug/env [32m200[0m 11.320 ms - 244[0m
+[0mPOST /test/so [31m500[0m 22965.160 ms - 74[0m
+[0mPOST /poll [32m200[0m 163.137 ms - 23[0m
+[0mPOST /poll [32m200[0m 116.054 ms - 23[0m
+[0mGET /shipments [32m200[0m 0.994 ms - 423[0m
+[0mPOST /poll [32m200[0m 134.080 ms - 23[0m
+[0mGET /shipments [32m200[0m 2.008 ms - 423[0m
+[0mPOST /poll [32m200[0m 96.295 ms - 23[0m
+[0mGET /shipments [32m200[0m 1.029 ms - 423[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /debug/env [32m200[0m 2.986 ms - 244[0m
+[0mGET /debug/env [32m200[0m 0.499 ms - 244[0m
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762848666739","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[0mPOST /test/so [32m200[0m 6401.334 ms - 169[0m
+[0mPOST /poll [32m200[0m 1.125 ms - 23[0m
+[0mGET /shipments [32m200[0m 0.740 ms - 423[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /debug/env [32m200[0m 3.028 ms - 244[0m
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762849088250","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[0mPOST /test/so [32m200[0m 5659.645 ms - 169[0m
+[0mGET /debug/env [32m200[0m 0.568 ms - 244[0m
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762849761484","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[0mPOST /test/so [32m200[0m 5469.098 ms - 169[0m
+[0mPOST /poll [32m200[0m 2.519 ms - 23[0m
+[0mGET /shipments [32m200[0m 0.973 ms - 423[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /debug/env [32m200[0m 5.146 ms - 244[0m
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[0mPOST /poll [32m200[0m 1235.384 ms - 23[0m
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[0mPOST /poll [32m200[0m 1118.819 ms - 23[0m
+[0mGET /shipments [32m200[0m 2.196 ms - 423[0m
+[0mGET /debug/env [32m200[0m 13.294 ms - 244[0m
+[0mGET /debug/env [32m200[0m 0.781 ms - 244[0m
+[0mGET /debug/env [32m200[0m 0.662 ms - 244[0m
+[0mGET /debug/env [32m200[0m 0.850 ms - 244[0m
+[0mGET /webhooks/shopify/orders/create [33m404[0m 20.557 ms - 169[0m
+[0mGET /webhooks/shopify/orders/create [33m404[0m 0.809 ms - 169[0m
+[0mGET /webhooks/shopify/orders/create [33m404[0m 0.582 ms - 169[0m
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"SO-undefined","clientReferenceNo2":"1762855311977","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":0,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_ERROR {"data":"undefined"}
+[0mPOST /webhooks/shopify/orders/create [31m500[0m 3498.030 ms - 25[0m
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855646518","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_ERROR {"data":"undefined"}
+[0mPOST /test/so [31m500[0m 3060.129 ms - 25[0m
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855669929","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_ERROR {"data":"undefined"}
+[0mPOST /webhooks/shopify/orders/create [31m500[0m 2981.577 ms - 25[0m
+[0mGET /debug/env [32m200[0m 0.504 ms - 244[0m
+[0mGET /debug/env [32m200[0m 0.301 ms - 244[0m
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855704159","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_ERROR {"data":"undefined"}
+[0mPOST /test/so [31m500[0m 3900.812 ms - 25[0m
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[0mPOST /poll [32m200[0m 1134.812 ms - 23[0m
+[0mGET /shipments [32m200[0m 0.825 ms - 423[0m
+[0mGET /debug/env [32m200[0m 0.638 ms - 244[0m
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/createso 404
+SO_ERROR {"status":404,"data":""}
+SO_PAYLOAD {"storerCode":"SBM","whCode":"SWH-KW03","projectCode":"SBM","shipmentType":"TCS","requiredShipDate":"2025-11-11","clientReferenceNo":"#DEMO1001","clientReferenceNo2":"1762855928401","serviceType":"OverNight","consigneeCode":"8203681","soDetail":[{"skuCode":"UAT-SKU-001","externalLineNo":"1","orderQty":1,"price":2500,"batchNo":"","mfgDate":"","expDate":"","lottable04":"","lottable05":"","lottable06":"","lottable07":""}]}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/createso 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+SO_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+SO_ERROR {"data":"undefined"}
+[0mPOST /test/so [31m500[0m 2924.440 ms - 25[0m
+[0mGET /debug/env [32m200[0m 0.548 ms - 244[0m
+[0mGET /favicon.ico [33m404[0m 0.767 ms - 150[0m
+[0mGET /debug/env [32m200[0m 0.353 ms - 244[0m
+[0mGET /health [33m404[0m 6.276 ms - 145[0m
+[0mGET / [33m404[0m 5.230 ms - 139[0m
+[0mGET / [33m404[0m 0.213 ms - 139[0m
+[0mGET /health [33m404[0m 0.830 ms - 145[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /health [32m200[0m 3.436 ms - 11[0m
+[0mGET /health [32m200[0m 0.940 ms - 11[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /health [32m200[0m 3.547 ms - 11[0m
+[0mGET /health [32m200[0m 0.831 ms - 11[0m
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[0mGET / [33m404[0m 5.968 ms - 139[0m
+[0mGET /health [32m200[0m 2.246 ms - 11[0m
+[0mGET /debug/env [32m200[0m 1.747 ms - 246[0m
+[0mGET / [33m404[0m 0.888 ms - 139[0m
+[0mGET /health [32m200[0m 0.358 ms - 11[0m
+[0mGET /debug/env [32m200[0m 0.599 ms - 246[0m
+[0mPOST /webhooks/shopify/orders/create [33m401[0m 12.637 ms - 11[0m
+[0mPOST /webhooks/shopify/orders/create [33m401[0m 7.487 ms - 11[0m
+[0mPOST /webhooks/shopify/orders/create [33m401[0m 2.892 ms - 11[0m
+[0mPOST /webhooks/shopify/orders/create [33m401[0m 1.610 ms - 11[0m
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231003 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%23DEMO1001 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/wmsedi/api/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 404
+GIN_ERROR {"status":404,"data":""}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno=%231002 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[TCS FAIL] https://devconnect.tcscourier.com/api/wmsedi/wmsedi/api/wmsedi/getginmaster?storerCode=SBM&whCode=SWH-KW03&clientrefno= 502 <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>openresty</center>
+</body>
+</html>
+
+GIN_ERROR {"status":502,"data":"<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"}
+[0mPOST /webhooks/shopify/orders/create [33m401[0m 1.139 ms - 11[0m
+[0mPOST /webhooks/shopify/orders/create [33m401[0m 8.611 ms - 11[0m
+[0mPOST /webhooks/shopify/orders/create [0m-[0m - ms - -[0m
+[0mGET /health [32m200[0m 2.703 ms - 11[0m
+[0mGET /debug/env [32m200[0m 2.439 ms - 246[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mPOST /webhooks/shopify/orders/create [33m401[0m 20.569 ms - 11[0m
+Server listening on :8090
+Health  → GET  http://localhost:8090/debug/env
+Test SO → POST http://localhost:8090/test/so
+[0mGET /health [32m200[0m 3.075 ms - 11[0m
+[0mGET /debug/env [32m200[0m 2.055 ms - 246[0m
+[0mPOST /test/order [33m404[0m 4.264 ms - 150[0m
+[0mPOST /webhooks/shopify/orders/create [33m401[0m 49.157 ms - 11[0m

@@ -1,0 +1,18 @@
+# env & secrets
+.env
+.env.*.local
+*.key
+*.pem
+
+# logs & caches
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# dependencies & build
+node_modules/
+dist/
+.build/
+.cache/

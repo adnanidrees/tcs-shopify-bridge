@@ -1,0 +1,16 @@
+test/so error → { message: 'AxiosError: timeout of 20000ms exceeded' }
+tcs.js not loaded: [tcs] Missing UAT BASE_URL or BEARER. Check .env.
+tcs.js not loaded: [tcs] Missing UAT BASE_URL or BEARER. Check .env.
+UNHANDLED REJECTION: RangeError: Input buffers must have the same byte length
+    at verifyShopifyHmac (file:///C:/tcs-shopify-bridge/src/shopify.js:12:17)
+    at file:///C:/tcs-shopify-bridge/src/index.js:268:8
+    at Layer.handle [as handle_request] (C:\tcs-shopify-bridge\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\tcs-shopify-bridge\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\tcs-shopify-bridge\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\tcs-shopify-bridge\node_modules\express\lib\router\layer.js:95:5)
+    at C:\tcs-shopify-bridge\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\tcs-shopify-bridge\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\tcs-shopify-bridge\node_modules\express\lib\router\index.js:280:10)
+    at IncomingMessage.<anonymous> (file:///C:/tcs-shopify-bridge/src/index.js:60:5) {
+  code: 'ERR_CRYPTO_TIMING_SAFE_EQUAL_LENGTH'
+}
