@@ -1,17 +1,25 @@
-// server.js (ROOT)
-const express = require("express");
-const app = express();
+// --- Shopify minimal ping (shop.json) ---
+app.get("/api/shopify/ping", async (_req, res) => {
+  try {
+    const STORE = (process.env.SHOPIFY_STORE_URL || "").trim();
+    const API_VERSION = (process.env.SHOPIFY_API_VERSION || "2024-10").trim();
+    const TOKEN = (process.env.SHOPIFY_ADMIN_TOKEN || "").trim();
 
-app.use(express.json());
+    if (!STORE || !API_VERSION || !TOKEN) {
+      return res.status(500).json({ ok:false, error:"Missing envs" });
+    }
 
-// ⬇️ Tumhare routes yahan:
-app.get("/", (req, res) => res.send("OK"));
-// eg: app.post("/tcs/create-order", handler);
+    const url = `https://${STORE}/admin/api/${API_VERSION}/shop.json`;
+    const r = await fetch(url, { headers: { "X-Shopify-Access-Token": TOKEN } });
 
-if (require.main === module) {
-  const PORT = process.env.PORT || 3000;
-  app.listen(PORT, () => console.log("Local running on", PORT));
-}
+    const text = await r.text();
+    let data; try { data = JSON.parse(text); } catch { data = text; }
 
-// Vercel serverless ke liye:
-module.exports = app;
+    if (!r.ok) {
+      return res.status(r.status).json({ ok:false, status:r.status, data });
+    }
+    return res.json({ ok:true, shop: data?.shop?.name || data });
+  } catch (e) {
+    return res.status(500).json({ ok:false, error:String(e) });
+  }
+});
