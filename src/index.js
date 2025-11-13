@@ -1,16 +1,40 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
 import { verifyShopifyHmac, normalizeOrder } from './shopify.js';
-import { makeTcs } from './tcs.js';
-import { sendAdminMail } from './mailer.js';
+import { makeBridge } from './bridge.js';
+import { all as allShipments } from './store.js';
 
-dotenv.config();
+async function loadEnv() {
+  try {
+    const mod = await import('dotenv');
+    const dotenv = mod?.default || mod;
+    if (dotenv?.config) dotenv.config();
+  } catch (err) {
+    if (process.env.DEBUG_ENV) {
+      console.warn('dotenv not loaded', err);
+    }
+  }
+}
+
+await loadEnv();
+
 const env = process.env;
 const app = express();
 
+let cron;
+try {
+  const mod = await import('node-cron');
+  cron = mod?.default || mod;
+} catch (err) {
+  if (process.env.DEBUG_ENV) {
+    console.warn('node-cron not loaded', err);
+  }
+}
+
 app.use('/webhooks/shopify/orders/create', bodyParser.raw({ type: '*/*' }));
 app.use(bodyParser.json());
+
+const bridge = makeBridge(env);
 
 app.get('/health', (req, res) => res.json({ ok: true }));
 
@@ -28,25 +52,30 @@ app.get('/debug/env', (req, res) => {
   });
 });
 
-// Manual test route (no HMAC)
-app.post('/test/order', express.json(), async (req, res) => {
+app.get('/shipments', async (_req, res) => {
+  const rows = await allShipments();
+  res.json({ ok: true, rows });
+});
+
+app.post('/tasks/sync', async (req, res) => {
   try {
-    const order = normalizeOrder(req.body || {});
-    const tcs = makeTcs(env);
-    const cn = await tcs.createCNFromOrder(order);
-
-    await sendAdminMail(env,
-      `TEST ORDER RECEIVED ${order.name || order.id}`,
-      `Order: ${JSON.stringify(order, null, 2)}\nTCS: ${JSON.stringify(cn, null, 2)}`
-    );
-
-    res.json({ ok: true, test: true, order, cn });
+    const result = await bridge.syncPendingShipments({ notifyCustomer: req.body?.notifyCustomer !== false });
+    res.json({ ok: true, synced: result.length, rows: result });
   } catch (e) {
     res.status(500).json({ ok: false, error: String(e?.message || e) });
   }
 });
 
-// Real Shopify webhook
+app.post('/test/order', express.json(), async (req, res) => {
+  try {
+    const order = normalizeOrder(req.body || {});
+    const record = await bridge.handleShopifyOrder(order);
+    res.json({ ok: true, test: true, order, record });
+  } catch (e) {
+    res.status(500).json({ ok: false, error: String(e?.message || e) });
+  }
+});
+
 app.post('/webhooks/shopify/orders/create', async (req, res) => {
   try {
     const hmac = req.get('x-shopify-hmac-sha256') || '';
@@ -56,19 +85,26 @@ app.post('/webhooks/shopify/orders/create', async (req, res) => {
     const payload = JSON.parse(rawBody.toString('utf8') || '{}');
     const order = normalizeOrder(payload);
 
-    const tcs = makeTcs(env);
-    const cn = await tcs.createCNFromOrder(order);
+    const record = await bridge.handleShopifyOrder(order);
 
-    await sendAdminMail(env,
-      `LIVE ORDER RECEIVED ${order.name || order.id}`,
-      `Order: ${JSON.stringify(order, null, 2)}\nTCS: ${JSON.stringify(cn, null, 2)}`
-    );
-
-    res.json({ ok: true, order, cn });
+    res.json({ ok: true, order, record });
   } catch (e) {
     res.status(500).json({ ok: false, error: String(e?.message || e) });
   }
 });
+
+const cronSchedule = env.CRON_SYNC_SCHEDULE || '0 11,18 * * *';
+if (cronSchedule && cron?.schedule) {
+  cron.schedule(cronSchedule, async () => {
+    try {
+      await bridge.syncPendingShipments();
+    } catch (err) {
+      console.error('Cron sync failed', err);
+    }
+  });
+} else if (cronSchedule) {
+  console.warn('Cron not scheduled because node-cron is unavailable.');
+}
 
 const PORT = Number(env.PORT || 8090);
 app.listen(PORT, () => console.log(`Bridge listening on :${PORT}`));
