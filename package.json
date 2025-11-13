@@ -2,12 +2,24 @@
   "name": "tcs-shopify-bridge",
   "version": "1.0.0",
   "main": "server.js",
-  "engines": { "node": ">=18 <23" },
+  "type": "module",
   "scripts": {
     "start": "node server.js",
-    "build": "echo \"no build step\""
+    "dev": "nodemon server.js",
+    "health": "node scripts/health-check.js"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "axios": "^1.7.7",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.14",
+    "serverless-http": "^3.2.0",
+    "body-parser": "^1.20.3",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.1",
+    "qs": "^6.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
